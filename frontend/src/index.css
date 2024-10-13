@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Instrument Sans', sans-serif;
+  background-color: var(--white);
+}
+
+@layer components {
+  .container {
+    @apply flex flex-col justify-center items-center mt-10 font-medium;
+  }
+
+  .button {
+    @apply border border-black p-2 rounded-md mt-2 bg-violet-200 text-black;
+  }
+
+  .loading {
+    @apply text-black font-semibold m-4 tracking-[1px] text-center;
+  }
+
+  .error-msg {
+    @apply text-red-500 mt-2 font-semibold;
+  }
+
+  .preview-link-item {
+    @apply flex gap-2 text-white bg-black py-[11px] px-[16px] rounded-md w-full items-center cursor-pointer;
+  }
+
+  .dropdown-item {
+    @apply flex gap-4 text-sm items-center text-black p-1;
+  }
+
+  .active-focus {
+    @apply focus:border-purple focus:shadow-lg;
+  }
+
+  .profile-input {
+    @apply grow w-[60%] justify-center  whitespace-nowrap bg-white rounded-lg border  border-zinc-300 text-zinc-800 focus:outline-none border-none;
+  }
+}

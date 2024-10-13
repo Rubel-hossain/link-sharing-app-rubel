@@ -1,0 +1,16 @@
+{
+  "name": "link-sharing-app-rubel",
+  "version": "1.0.0",
+  "description": "- rename `backend/.env.sample` file to `.env` and add all the environment variable values",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend && npm run start",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "link-sharing-app-rubel": "file:"
+  }
+}
